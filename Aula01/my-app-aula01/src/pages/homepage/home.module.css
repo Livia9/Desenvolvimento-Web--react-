@@ -1,0 +1,18 @@
+/* .titulo{
+    font-family: 'Courier New', Courier, monospace;
+    color: blueviolet;
+} */
+ .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #100f0f;
+}
+
+
+.cardsContainer{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+}
