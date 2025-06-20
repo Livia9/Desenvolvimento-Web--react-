@@ -4,8 +4,10 @@
     background-color: #24204b;
     display: flex;
     justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding: 10px;
+     align-items: center;
 }
 
 .navItens {
@@ -14,4 +16,5 @@
     gap: 0.5rem;
     color: #f9f9f9;
     font-weight: bold;
+
 }

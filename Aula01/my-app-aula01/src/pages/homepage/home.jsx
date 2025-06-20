@@ -29,9 +29,9 @@ export function HomePage() {
 
     // console.log(nome)
 
-    // const handleCounter = () => {
-    //     setCounter(counter + 1)
-    // }
+    const handleCounter = () => {
+        setCounter(counter + 1)
+    }
 
     const handleClick = () => {
         console.log("clicou no botão");
@@ -58,28 +58,34 @@ export function HomePage() {
         //         value={email}
         //         onChange={(e) => setEmail(e.target.value)}
         //     />
-        //      <h1 style={{color: "white"}}>Contador:{counter}</h1>
-        //      <button className={styles.button} onClick={handleCounter}>incrementar</button>
+        //      
+
         // </div>
-        <div className={styles.container}>
-            <Navbar />
+        <div>
+            <div className={styles.container}>
+                <Navbar />
 
-            <h1 style={{color:"white"}}>Minhas séries favoritas:</h1>
+                <h1 className={styles.titulo}>Minhas séries favoritas:</h1>
 
-            <div className={styles.cardsContainer}>
-                {series.map((serie, index) => (
-                    <>
-                        <Card key={index}>
-                            <p>{serie}</p>
-                        </Card>
-                    </>
-                ))}
-                <Button onClick={handleClick} title={"Clique aqui"} type="button" />
+                <div className={styles.cardsContainer}>
+                    {series.map((serie, index) => (
+                        <>
+                            <Card key={index}>
+                                <p>{serie}</p>
+                            </Card>
+                        </>
+                    ))}
+                    <Button onClick={handleClick} title={"Clique aqui"} type="button" />
+                </div>
+                <Button onClick={handleAlternarMensagem} title={show ? 'Esconder mensagem' : 'mostrar mensagem'} type="button" />
+                {
+                    show && <p style={{ color: 'black' }}>oie</p>
+                }
+ <div> <h1 style={{ color: "black" }}>Contador:{counter}</h1>
+                <button type="button" onClick={handleCounter}>incrementar</button></div>
             </div>
-            <Button onClick={() => { handleAlternarMensagem }} title={show ? 'Esconder mensagem' : 'mostrar mensagem'} type="button" />
-            {
-                show && <p style={{ color: 'white' }}>oie</p>
-            }
+
+            <footer className={styles.footer}> Serratec 2025</footer>
         </div>
 
     )

@@ -10,7 +10,7 @@ export function Rotas() {
             <Route path="/" element={<HomePage />} />
             <Route path="/formulario" element={<FormPage />} />
             <Route path="/about" element={<About />} />
-
+            {/* <Route path="/*" element={<NotFoundPage />} /> */}
         </Routes>
     )
 }  

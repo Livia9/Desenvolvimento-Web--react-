@@ -43,7 +43,7 @@ function App() {
     // <HomePage/>
 
     // <About />
- <Rotas />
+   <Rotas />
   )
 }
 
